@@ -9,6 +9,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+*{
+    box-sizing: border-box;
+}
 
 html {
     color: #222;
@@ -42,9 +45,10 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #fff;
     margin: 1em 0;
     padding: 0;
+    width: 100%;
 }
 
 /*
@@ -96,13 +100,13 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: #f16059;
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 0 2em;
   font-size: 1.25em;
   height: 100%;
@@ -111,21 +115,33 @@ body {
 
 header,
 footer {
-  background-color: #222;
+  background-color: #f16059;
   height: 80px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
+header {
+    font-size: 4em;
+    padding: 1.1em 0;
+}
+
+footer {
+    font-size: 1em;
+    padding: 1em 0;
+}
 main {
-  background-color: #ccc;
-  height: 250px;
+  background-color: #f16059;
+  height: 150px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  font-size: 2em;
+  padding: 0.5em 0;
+
 }
 
 header,
@@ -141,16 +157,6 @@ main {
   align-items: center;
 }
 
-#div-1,
-#div-2,
-#div-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.25em;
-}
 
 .wrapper span {
   font-family: 'Lora', sans-serif;
@@ -168,16 +174,30 @@ main {
 .flex-items {
   /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
   color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
+  line-height: 1.3em;
+  font-size: 1em;
   background-color: #f16059;
-  width: 30%;
+  width: 33%;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1em 0;
+
 }
 
+#div-1{
+    padding: 0 1.5em 0 0;
+}
+#div-2 {
+    padding: 1.5em;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+#div-3{
+    padding: 0 0 0 1.5em;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
